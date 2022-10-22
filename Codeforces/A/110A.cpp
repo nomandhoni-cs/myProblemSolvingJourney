@@ -2,15 +2,24 @@
 using namespace std;
 int main()
 {
-    int luckyNumber, numberLength;
-    cin >> luckyNumber;
-    numberLength = to_string(luckyNumber).length();
-    to_string(luckyNumber);
-    for (int i = 0; i < numberLength; i++)
+    long long n;
+    cin >> n;
+    int count = 0;
+    while (n != 0)
     {
-    // numberLength = std::to_string(luckyNumber);
-        cout << typeOf(luckyNumber);
+        if (n % 10 == 4 || n % 10 == 7)
+        {
+            count += 1;
+        }
+        n /= 10;
     }
-    
-return 0;
+    if (count == 4 || count == 7)
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
+    return 0;
 }
