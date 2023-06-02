@@ -19,7 +19,13 @@ int main()
         }
     }
     if(miskaWon > chrisWon){
-        std::cout << "Miska";
+        std::cout << "Mishka";
+    }
+    else if(miskaWon < chrisWon){
+        std::cout << "Chris";
+    }
+    else{
+        cout << "Friendship is magic!^^";
     }
     return 0;
 }
